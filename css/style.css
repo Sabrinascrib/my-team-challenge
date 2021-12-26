@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+:root {
+  --black: #000;
+  --arial: Arial, Helvetica, sans-serif;
+  --PT-serif: "PT Serif", serif;
+}
+
+.grid-header {
+  display: grid;
+  grid-template-areas:
+    "heading"
+    "small-heading "
+    "paragraph";
+}
+
+.heading {
+  color: var(--black);
+  font-family: var(--PT-serif);
+  grid-area: heading;
+}
+
+.small-heading {
+  color: var(--black);
+  font-family: var(--arial);
+  text-transform: uppercase;
+  grid-area: small-heading;
+}
+
+.paragraph {
+  color: var(--black);
+  font-family: var(--arial);
+  grid-area: paragraph;
+}
